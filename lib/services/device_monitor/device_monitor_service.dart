@@ -1,9 +1,20 @@
 import 'dart:ffi';
-
 import 'package:ffi/ffi.dart';
-
 import 'device_monitor_ffi.dart';
 
+///
+///Flutter
+///   │
+///   └── DeviceMonitorService
+///           │
+///           │ Dart FFI
+///           ↓
+///     DeviceMonitor.dll
+///           ↓
+///      DeviceCore
+///           ↓
+///        COM Port
+///
 class DeviceMonitorService {
   DeviceMonitorService._internal();
 

@@ -142,7 +142,7 @@ class DeviceMonitorFFI {
     }
 
     return DynamicLibrary.open(
-      'DeviceMonitor.dll',
+      'DeviceMonitorDLL.dll',
     );
   }
 
